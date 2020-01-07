@@ -23,6 +23,7 @@ public class LoginController {
   @RequestMapping(value = "/login", method = RequestMethod.GET)
   public ModelAndView showLogin(HttpServletRequest request, HttpServletResponse response) {
     ModelAndView mav = new ModelAndView("login");
+    System.out.println("login");
     mav.addObject("login", new Login());
 
     return mav;
